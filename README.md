@@ -54,7 +54,22 @@ Open your browser and navigate to `http://localhost:5173`.
 npm run build
 ```
 
+### 🐳 5. Run with Docker
+
+Build the Docker image:
+```bash
+docker build -t truthlens-ai .
+```
+
+Run the container on port 8080:
+```bash
+docker run -d -p 8080:80 --name truthlens truthlens-ai
+```
+
+Access the app at `http://localhost:8080`.
+
 ---
+
 
 ## 📁 Directory Structure
 
